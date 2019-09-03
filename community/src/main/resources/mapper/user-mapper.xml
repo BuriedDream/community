@@ -24,7 +24,7 @@
     <select id="selectByName" resultType="edu.jxau.community.entity.User">
         select <include refid="selectFields"/>
         from <include refid="tableName"/>
-        where id = #{username}
+        where username = #{username}
     </select>
 
     <select id="selectByEmail" resultType="edu.jxau.community.entity.User">
@@ -33,7 +33,7 @@
         where id = #{email}
     </select>
 
-    <insert id="insertUser" parameterType="User" keyProperty="id">
+    <insert id="insertUser" parameterType="edu.jxau.community.entity.User" keyProperty="id">
         insert into <include refid="tableName"/>
         (<include refid="insertFields"/>)
         values

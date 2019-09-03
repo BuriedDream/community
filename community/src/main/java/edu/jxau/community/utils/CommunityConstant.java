@@ -23,4 +23,14 @@ public interface CommunityConstant {
      * 激活失败
      */
     int ACTIVATION_FAILURE = 2;
+
+    /**
+     * 默认过期时间
+     */
+    int DEFAULT_EXPIRED_SECONDS = 12*3600;
+
+    /**
+     * 记住密码的过期时间
+     */
+    int REMEMBER_EXPIRED_SECONDS = 15*24*3600;
 }
