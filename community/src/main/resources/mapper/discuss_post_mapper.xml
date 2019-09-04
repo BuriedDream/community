@@ -34,4 +34,19 @@
         </if>
     </select>
 
+    <insert id="insertDiscussPost" parameterType="DiscussPost" keyProperty="id">
+        insert into <include refid="tableName"/> (<include refid="insertFields"/>)
+        values (#{userId},#{title},#{content},#{type},#{status},#{createTime},#{commentCount},#{score})
+    </insert>
+
+    <update id="updateCommentCount">
+        update <include refid="tableName"/> set comment_count = #{commentCount} where id = #{id}
+    </update>
+
+    <select id="selectDiscussPostById" resultType="DiscussPost">
+        select <include refid="selectFields"/>
+        from <include refid="tableName"/>
+        where id = #{id}
+    </select>
+
 </mapper>

@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * @title: community
  * @ClassName CookieUtil.java
- * @Description:
+ * @Description: 获取请求中 指定 cookie 的值
  * @Author: liam
  * @Version:
  **/

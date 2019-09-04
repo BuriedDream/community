@@ -41,7 +41,7 @@ public class HomeController {
             for (DiscussPost discussPost : list) {
                 Map<String,Object> map = new HashMap<>();
                 map.put("post", discussPost);
-                User user = userService.findById(discussPost.getUserId());
+                User user = userService.findUserById(discussPost.getUserId());
                 map.put("user",user);
 
                 discussPosts.add(map);

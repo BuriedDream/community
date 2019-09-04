@@ -33,4 +33,14 @@ public interface CommunityConstant {
      * 记住密码的过期时间
      */
     int REMEMBER_EXPIRED_SECONDS = 15*24*3600;
+
+    /**
+     *  实体类型：贴子
+     */
+    int ENTITY_TYPE_POST = 1;
+
+    /**
+     *  实体类型：评论
+     */
+    int ENTITY_TYPE_COMMENT = 2;
 }
