@@ -14,7 +14,7 @@ public class Message {
     private int id;
     private int fromId;
     private int toId;
-    private String conversionId;
+    private String conversationId;
     private String content;
     private int status;
     private Date createTime;
@@ -46,12 +46,12 @@ public class Message {
         this.toId = toId;
     }
 
-    public String getConversionId() {
-        return conversionId;
+    public String getConversationId() {
+        return conversationId;
     }
 
-    public void setConversionId(String conversionId) {
-        this.conversionId = conversionId;
+    public void setConversationId(String conversationId) {
+        this.conversationId = conversationId;
     }
 
     public String getContent() {
@@ -84,7 +84,7 @@ public class Message {
                 "id=" + id +
                 ", fromId=" + fromId +
                 ", toId=" + toId +
-                ", conversionId='" + conversionId + '\'' +
+                ", conversionId='" + conversationId + '\'' +
                 ", content='" + content + '\'' +
                 ", status=" + status +
                 ", createTime=" + createTime +
